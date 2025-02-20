@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class Class {
     private List<Categories> categories;
-    private TreeMap<String, Float> grading_scale; // Map letter grades to numerical grades (Float)
+    private TreeMap<String, Float> grading_scale; 
     private String name;
 
     public Class(String name) {
@@ -99,7 +99,7 @@ public class Class {
         grade = scanner.nextFloat();
         grading_scale.put("D-", grade);
 
-        // Don't close scanner here as we are using it elsewhere (main method might need it)
+        // Don't close scanner here as we are using it elsewhere
     }
 
     public TreeMap<String, Float> get_grading_scale() {
